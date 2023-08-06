@@ -12,7 +12,7 @@ movie_df=pd.read_csv("movie_list.csv")
 
 from sklearn.feature_extraction.text import CountVectorizer
 
-cv=CountVectorizer(max_features=5000,stop_words="english")
+cv=CountVectorizer(max_features=500,stop_words="english")
 
 vectors=cv.fit_transform(movie_df["tags"]).toarray()
 
