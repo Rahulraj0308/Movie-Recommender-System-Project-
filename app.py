@@ -20,7 +20,7 @@ similarity=cosine_similarity(vectors)
 
 #recommender function
 def fetch_movies(movie_id):
-    param = {'api_key':'db5d7fec69cfa998991eaf162dfaf8ff'}  
+    param = {'api_key':'3ff8e1553e7651ed5d7e2bdd89f3e296'}  
     
     response = requests.get('https://api.themoviedb.org/3/movie/'+str(movie_id),params=param)
     data = response.json()
