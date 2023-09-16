@@ -8,11 +8,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 
-movie_df=pd.read_csv("movie_list.csv")
+movie_df=pd.read_csv("C:/Users/91988/Desktop/Coding/Data Science/Movie Recommender System Project/movie_list.csv")
 
 from sklearn.feature_extraction.text import CountVectorizer
 
-cv=CountVectorizer(max_features=500,stop_words="english")
+cv=CountVectorizer(max_features=5000,stop_words="english")
 
 vectors=cv.fit_transform(movie_df["tags"]).toarray()
 
@@ -69,8 +69,8 @@ def search_result():
         print(e)
         return f"No Internet Connection{e}"
 
-if __name__ == "__main__":
-  app.run()
+if __name__ == '__main__':
+   app.run()
 
 
 
