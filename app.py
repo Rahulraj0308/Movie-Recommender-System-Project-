@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 
-movie_df=pd.read_csv("C:/Users/91988/Desktop/Coding/Data Science/Movie Recommender System Project/movie_list.csv")
+movie_df=pd.read_csv("movie_list.csv")
 
 from sklearn.feature_extraction.text import CountVectorizer
 
